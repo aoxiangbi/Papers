@@ -44,10 +44,9 @@ alwaysApply: true
 
 同步把同一篇解读写进站点（本仓库是 Next.js「论文解读」站）：
 
-1. 新建 `content/briefs/<slug>.ts`，导出符合 `PaperBrief` 的对象（见 `content/briefs/types.ts`）。
-2. 在 `content/briefs/index.ts` 登记该 brief。
-3. `content/papers.ts` 增加对应 `PaperSummary`：`hasDetailPage: true`，`category` 选 sleep / nutrition / training。
-4. 详情页由 `app/papers/[slug]/page.tsx` 自动渲染，不必为每篇再手写 page（已有深度定制页的 slug 除外，如 `evening-exercise-sleep`）。
+1. 新建 `content/briefs/<slug>.ts`，导出符合 `PaperBrief` 的对象（见 `content/briefs/types.ts`），必须含完整 `zh` 与 `en` 五段模板字段。
+2. 在 `content/briefs/index.ts` 登记该 brief（首页会自动从 briefs 生成列表）。
+3. 详情页由 `app/papers/[slug]/page.tsx` + `BriefArticle` 自动渲染，并支持页头中英文切换。
 
 `slug` 用英文短横线，稳定且语义清楚。
 
