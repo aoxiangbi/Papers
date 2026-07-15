@@ -64,6 +64,27 @@ export const papers: PaperSummary[] = [
     ],
     tags: ["热量限制", "间歇性禁食", "健康寿命"],
   },
+  {
+    slug: "exercise-injury-prevention",
+    category: "training",
+    titleZh: "运动干预预防运动损伤：哪种训练最有效？",
+    title:
+      "The effectiveness of exercise interventions to prevent sports injuries: a systematic review and meta-analysis of randomised controlled trials",
+    journal: "British Journal of Sports Medicine",
+    year: 2014,
+    doi: "10.1136/bjsports-2013-092538",
+    doiUrl: "https://doi.org/10.1136/bjsports-2013-092538",
+    summary:
+      "25 项 RCT、约 2.6 万人：力量训练可将运动损伤降到约 1/3 以下；平衡与综合方案也有效；单纯拉伸几乎无效。",
+    keyPoints: [
+      "力量训练防伤效应最强（RR ≈ 0.32）",
+      "本体感觉 / 平衡训练约降伤 45%",
+      "多成分方案有效，但可能被稀释",
+      "单纯拉伸不是可靠的防伤策略",
+    ],
+    tags: ["防伤", "力量训练", "BJSM"],
+    hasDetailPage: true,
+  },
 ];
 
 export function getPapersByCategory(category: PaperCategory): PaperSummary[] {
