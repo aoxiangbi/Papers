@@ -1,4 +1,4 @@
-export type PaperCategory = "sleep" | "nutrition" | "training";
+export type PaperCategory = "sleep" | "nutrition" | "training" | "emotion";
 
 export type Locale = "zh" | "en";
 
@@ -47,6 +47,7 @@ export const uiCopy = {
       sleep: "睡眠",
       nutrition: "营养与长寿",
       training: "训练与恢复",
+      emotion: "情绪与健康",
     } as Record<PaperCategory, string>,
   },
   en: {
@@ -68,6 +69,7 @@ export const uiCopy = {
       sleep: "Sleep",
       nutrition: "Nutrition & longevity",
       training: "Training & recovery",
+      emotion: "Emotion & health",
     } as Record<PaperCategory, string>,
   },
 } as const;

@@ -4,13 +4,19 @@ import type { PaperBrief } from "@/content/briefs/types";
 
 export type { PaperCategory };
 
-export const categoryOrder: PaperCategory[] = ["sleep", "nutrition", "training"];
+export const categoryOrder: PaperCategory[] = [
+  "sleep",
+  "nutrition",
+  "training",
+  "emotion",
+];
 
 /** @deprecated Prefer uiCopy[locale].categories — kept for any legacy imports */
 export const categoryLabels: Record<PaperCategory, string> = {
   sleep: "睡眠",
   nutrition: "营养与长寿",
   training: "训练与恢复",
+  emotion: "情绪与健康",
 };
 
 export interface PaperSummary {
