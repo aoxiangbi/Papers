@@ -39,10 +39,13 @@ export const uiCopy = {
     reference: "参考文献",
     doi: "原文 DOI",
     siteTitle: "论文解读",
-    siteSubtitle: "基于同行评议研究的要点提炼，按主题分类。仅供科普参考，不构成医疗建议。",
+    siteSubtitle: "先按主题浏览，再点进文章看完整解读。仅供科普参考，不构成医疗建议。",
     footer: "内容基于公开发表的学术研究，仅供科普参考，不构成医疗建议。",
-    detail: "深度解读 →",
+    detail: "阅读解读 →",
     brandSub: "论文解读",
+    topicsNav: "按主题",
+    articleCount: (n: number) => `${n} 篇`,
+    breadcrumbHome: "首页",
     categories: {
       sleep: "睡眠",
       nutrition: "营养与长寿",
@@ -60,11 +63,14 @@ export const uiCopy = {
     doi: "Paper DOI",
     siteTitle: "Paper Briefs",
     siteSubtitle:
-      "Concise takeaways from peer-reviewed research, grouped by topic. For education only — not medical advice.",
+      "Browse by topic, then open a brief for the full takeaway. For education only — not medical advice.",
     footer:
       "Content is based on published research for educational purposes only and is not medical advice.",
     detail: "Read brief →",
     brandSub: "Paper briefs",
+    topicsNav: "Topics",
+    articleCount: (n: number) => (n === 1 ? "1 paper" : `${n} papers`),
+    breadcrumbHome: "Home",
     categories: {
       sleep: "Sleep",
       nutrition: "Nutrition & longevity",

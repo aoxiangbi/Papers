@@ -15,12 +15,19 @@ export function CategorySection({ category }: CategorySectionProps) {
   const items = getBriefsByCategory(category);
   if (items.length === 0) return null;
 
+  const ui = uiCopy[locale];
+
   return (
-    <section>
-      <h2 className="text-sm font-semibold text-muted uppercase tracking-wider mb-4">
-        {uiCopy[locale].categories[category]}
-      </h2>
-      <div className="grid gap-4">
+    <section id={category} className="scroll-mt-24">
+      <div className="flex items-baseline justify-between gap-3 mb-1 pb-3 border-b border-border">
+        <h2 className="text-lg font-semibold text-foreground tracking-tight">
+          {ui.categories[category]}
+        </h2>
+        <span className="text-xs text-muted tabular-nums">
+          {ui.articleCount(items.length)}
+        </span>
+      </div>
+      <div className="divide-y divide-border">
         {items.map((paper) => (
           <PaperCard key={paper.slug} paper={paper} />
         ))}

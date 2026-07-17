@@ -15,55 +15,26 @@ export function PaperCard({ paper }: PaperCardProps) {
   const ui = uiCopy[locale];
 
   return (
-    <article className="rounded-xl border border-border bg-card p-5">
-      <div className="flex flex-wrap items-center gap-2 mb-3">
-        <span className="text-xs font-medium text-accent bg-accent-light px-2 py-0.5 rounded">
-          {paper.journal} · {paper.year}
-        </span>
-        {copy.tags.map((tag) => (
-          <span
-            key={tag}
-            className="text-xs text-muted bg-stone-100 px-2 py-0.5 rounded"
-          >
-            {tag}
-          </span>
-        ))}
-      </div>
-
-      <h3 className="text-lg font-semibold text-foreground leading-snug mb-1">
-        {copy.titleDisplay}
-      </h3>
-      <p className="text-xs text-muted italic mb-3 line-clamp-2">{paper.title}</p>
-
-      <p className="text-sm text-stone-600 mb-4 leading-relaxed">{copy.summary}</p>
-
-      <ul className="space-y-1.5 mb-4">
-        {copy.keyPoints.map((point) => (
-          <li key={point} className="text-sm text-stone-600 flex gap-2">
-            <span className="text-accent shrink-0">·</span>
-            <span>{point}</span>
-          </li>
-        ))}
-      </ul>
-
-      <div className="flex flex-wrap items-center gap-3 pt-3 border-t border-border">
-        {paper.doiUrl && (
-          <a
-            href={paper.doiUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-accent hover:underline"
-          >
-            {ui.doi}
-          </a>
-        )}
-        <Link
-          href={`/papers/${paper.slug}`}
-          className="text-xs font-medium text-foreground hover:text-accent transition-colors ml-auto"
-        >
+    <Link
+      href={`/papers/${paper.slug}`}
+      className="group block py-4 first:pt-0 last:pb-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40 focus-visible:ring-offset-2 rounded-sm"
+    >
+      <div className="flex items-start justify-between gap-4">
+        <div className="min-w-0">
+          <p className="text-xs text-muted mb-1.5">
+            {paper.journal} · {paper.year}
+          </p>
+          <h3 className="text-base font-semibold text-foreground leading-snug group-hover:text-accent transition-colors">
+            {copy.titleDisplay}
+          </h3>
+          <p className="mt-1.5 text-sm text-stone-600 leading-relaxed line-clamp-2">
+            {copy.summary}
+          </p>
+        </div>
+        <span className="shrink-0 text-xs font-medium text-muted group-hover:text-accent transition-colors pt-5">
           {ui.detail}
-        </Link>
+        </span>
       </div>
-    </article>
+    </Link>
   );
 }

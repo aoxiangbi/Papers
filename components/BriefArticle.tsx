@@ -10,15 +10,27 @@ export function BriefArticle({ brief }: { brief: PaperBrief }) {
   const { locale } = useLanguage();
   const copy = brief[locale];
   const ui = uiCopy[locale];
+  const categoryLabel = ui.categories[brief.category];
 
   return (
     <article className="mx-auto max-w-2xl px-4 py-8 sm:py-12">
-      <Link
-        href="/"
-        className="inline-block text-sm text-muted hover:text-accent mb-6 transition-colors"
+      <nav
+        aria-label="Breadcrumb"
+        className="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-muted"
       >
-        {ui.backHome}
-      </Link>
+        <Link href="/" className="hover:text-accent transition-colors">
+          {ui.breadcrumbHome}
+        </Link>
+        <span aria-hidden="true">/</span>
+        <Link
+          href={`/#${brief.category}`}
+          className="hover:text-accent transition-colors"
+        >
+          {categoryLabel}
+        </Link>
+        <span aria-hidden="true">/</span>
+        <span className="text-foreground line-clamp-1">{copy.titleDisplay}</span>
+      </nav>
 
       <header className="mb-8">
         <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -66,7 +78,8 @@ export function BriefArticle({ brief }: { brief: PaperBrief }) {
 
       <div className="mt-10 pt-6 border-t border-border text-sm text-muted space-y-2">
         <p>
-          {ui.reference}{locale === "zh" ? "：" : ": "}
+          {ui.reference}
+          {locale === "zh" ? "：" : ": "}
           {brief.reference}
           {brief.doiUrl ? (
             <>
