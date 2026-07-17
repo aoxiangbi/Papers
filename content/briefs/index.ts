@@ -2,11 +2,13 @@ import type { PaperBrief } from "./types";
 import { calorieRestrictionLongevity } from "./calorie-restriction-longevity";
 import { eveningExerciseSleep } from "./evening-exercise-sleep";
 import { exerciseInjuryPrevention } from "./exercise-injury-prevention";
+import { mediterraneanDietCvdPrevention } from "./mediterranean-diet-cvd-prevention";
 import { psychologicalStressCommonCold } from "./psychological-stress-common-cold";
 
 export const briefs: PaperBrief[] = [
   eveningExerciseSleep,
   calorieRestrictionLongevity,
+  mediterraneanDietCvdPrevention,
   exerciseInjuryPrevention,
   psychologicalStressCommonCold,
 ];
