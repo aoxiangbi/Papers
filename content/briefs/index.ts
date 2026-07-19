@@ -1,5 +1,6 @@
 import type { PaperBrief } from "./types";
 import { calorieRestrictionLongevity } from "./calorie-restriction-longevity";
+import { draganskiGreyMatterTraining } from "./draganski-grey-matter-training";
 import { eveningExerciseSleep } from "./evening-exercise-sleep";
 import { exerciseInjuryPrevention } from "./exercise-injury-prevention";
 import { interheartMiRiskFactors } from "./interheart-mi-risk-factors";
@@ -11,6 +12,7 @@ export const briefs: PaperBrief[] = [
   calorieRestrictionLongevity,
   mediterraneanDietCvdPrevention,
   interheartMiRiskFactors,
+  draganskiGreyMatterTraining,
   exerciseInjuryPrevention,
   psychologicalStressCommonCold,
 ];
