@@ -4,6 +4,7 @@ import { draganskiGreyMatterTraining } from "./draganski-grey-matter-training";
 import { eveningExerciseSleep } from "./evening-exercise-sleep";
 import { exerciseInjuryPrevention } from "./exercise-injury-prevention";
 import { interheartMiRiskFactors } from "./interheart-mi-risk-factors";
+import { lancetOralHealthGlobalBurden } from "./lancet-oral-health-global-burden";
 import { mediterraneanDietCvdPrevention } from "./mediterranean-diet-cvd-prevention";
 import { psychologicalStressCommonCold } from "./psychological-stress-common-cold";
 
@@ -12,6 +13,7 @@ export const briefs: PaperBrief[] = [
   calorieRestrictionLongevity,
   mediterraneanDietCvdPrevention,
   interheartMiRiskFactors,
+  lancetOralHealthGlobalBurden,
   draganskiGreyMatterTraining,
   exerciseInjuryPrevention,
   psychologicalStressCommonCold,
