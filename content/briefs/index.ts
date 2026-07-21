@@ -1,5 +1,4 @@
 import type { PaperBrief } from "./types";
-import { bourneBlindnessVisionImpairment } from "./bourne-blindness-vision-impairment";
 import { calorieRestrictionLongevity } from "./calorie-restriction-longevity";
 import { draganskiGreyMatterTraining } from "./draganski-grey-matter-training";
 import { eveningExerciseSleep } from "./evening-exercise-sleep";
@@ -8,6 +7,7 @@ import { interheartMiRiskFactors } from "./interheart-mi-risk-factors";
 import { lancetOralHealthGlobalBurden } from "./lancet-oral-health-global-burden";
 import { mediterraneanDietCvdPrevention } from "./mediterranean-diet-cvd-prevention";
 import { psychologicalStressCommonCold } from "./psychological-stress-common-cold";
+import { rosenfieldDigitalEyeStrain } from "./rosenfield-digital-eye-strain";
 
 export const briefs: PaperBrief[] = [
   eveningExerciseSleep,
@@ -15,7 +15,7 @@ export const briefs: PaperBrief[] = [
   mediterraneanDietCvdPrevention,
   interheartMiRiskFactors,
   lancetOralHealthGlobalBurden,
-  bourneBlindnessVisionImpairment,
+  rosenfieldDigitalEyeStrain,
   draganskiGreyMatterTraining,
   exerciseInjuryPrevention,
   psychologicalStressCommonCold,
