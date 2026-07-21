@@ -1,4 +1,5 @@
 import type { PaperBrief } from "./types";
+import { bourneBlindnessVisionImpairment } from "./bourne-blindness-vision-impairment";
 import { calorieRestrictionLongevity } from "./calorie-restriction-longevity";
 import { draganskiGreyMatterTraining } from "./draganski-grey-matter-training";
 import { eveningExerciseSleep } from "./evening-exercise-sleep";
@@ -14,6 +15,7 @@ export const briefs: PaperBrief[] = [
   mediterraneanDietCvdPrevention,
   interheartMiRiskFactors,
   lancetOralHealthGlobalBurden,
+  bourneBlindnessVisionImpairment,
   draganskiGreyMatterTraining,
   exerciseInjuryPrevention,
   psychologicalStressCommonCold,
