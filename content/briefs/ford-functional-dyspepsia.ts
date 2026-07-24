@@ -22,7 +22,7 @@ export const fordFunctionalDyspepsia: PaperBrief = {
       "证据较明确的干预：有幽门螺杆菌先根除；抑酸药（PPI/H2）、促动力药、部分中枢神经调节药可能帮助；单纯改生活方式的 RCT 证据很少，但避开个人触发食物仍实用",
     ],
     mechanism:
-      "从第一性原理看，消化系统要干三件事：装下食物（胃先放松）、磨碎推进、把“疼不疼”的信号传给大脑。功能性消化不良时，胃常常“装不下”——餐后食物堆在胃窦，人就觉得胀、早饱；神经又对酸、扩张、辣椒素（TRPV1）过于敏感，一点刺激就报疼、烧、恶心。所以吃辣、吃油、吃撑，不是“把胃烧坏了一块肉”，更像是“报警器调太灵敏 + 装货容积暂时不够”。急性猛吃辣常加重；长期极低剂量辣椒素有时反而脱敏——说明关键在神经敏感性，不在神秘毒素。",
+      "消化系统要干三件事：胃先放松以容纳食物、再磨碎推进、并把疼痛信号传给大脑。功能性消化不良时，胃餐后往往舒张不够，食物更容易积在胃下部，人就觉得胀、早饱；同时内脏神经对酸、扩张和辣椒素更敏感，同样刺激更容易疼、烧、恶心。所以吃辣、吃油、吃撑，多半不是胃被腐蚀出了器质性损伤，而是胃容纳能力变差、痛觉更敏感。急性猛吃辣常加重；长期极低剂量辣椒素有时反而脱敏——说明关键在神经敏感性，不在神秘毒素。",
     advice: [
       "少吃撑、少一次高脂大餐；记下自己的触发食物（辣、油炸、咖啡、酒精、NSAID 止痛药等），先避开最明显的那几样。",
       "有烧心或上腹痛，可在医生指导下短期试用抑酸；别把所有不适都当成“胃炎要天天养”，也别自行长期乱吃止痛药伤胃。",
@@ -52,7 +52,7 @@ export const fordFunctionalDyspepsia: PaperBrief = {
       "Therapies with clearer evidence: eradicate H. pylori if present; PPIs/H2 blockers, prokinetics, and some neuromodulators may help; lifestyle RCTs are scarce, but avoiding personal triggers remains practical",
     ],
     mechanism:
-      "First principles: the gut must store a meal (stomach relaxes), grind and move it, and send “does this hurt?” signals to the brain. In FD, storage often fails — food piles up distally and you feel full early; nerves over-react to stretch, acid, and capsaicin (TRPV1), so mild stimuli feel like burning pain. Spicy or oily heavy meals are less “corrosive damage” and more “alarm system too loud + temporary capacity too small.” Acute chilli often worsens symptoms; prolonged low-dose capsaicin can sometimes desensitise — pointing to nerve sensitivity, not a mystery toxin.",
+      "The gut has three jobs: the stomach relaxes to hold a meal, then grinds and moves it, and sends pain signals to the brain. In functional dyspepsia, the stomach often fails to relax enough after eating, so food pools lower in the stomach and you feel full early; visceral nerves also react more strongly to acid, stretch, and capsaicin, so the same stimulus more easily causes pain, burning, or nausea. Spicy, oily, or oversized meals usually do not mean the stomach has been chemically burned into structural damage — they mean poorer accommodation and higher pain sensitivity. Acute chilli often worsens symptoms; prolonged low-dose capsaicin can sometimes desensitise — pointing to nerve sensitivity, not a mystery toxin.",
     advice: [
       "Avoid mega-meals and big high-fat hits; log personal triggers (spice, fried food, coffee, alcohol, NSAIDs) and cut the worst offenders first.",
       "For burning or epigastric pain, a short clinician-guided acid-suppression trial may help; do not assume every ache needs lifelong “stomach tonics,” and do not self-medicate long-term with NSAIDs.",
